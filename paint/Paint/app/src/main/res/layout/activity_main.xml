@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/buttonnaranja"
+            android:layout_width="33dp"
+            android:layout_height="35dp"
+            android:background="@android:color/holo_orange_dark"
+            app:layout_constraintStart_toEndOf="@+id/buttonrojo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonrojo"
+            android:layout_width="33dp"
+            android:layout_height="35dp"
+            android:background="@android:color/holo_red_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonamarillo"
+            android:layout_width="33dp"
+            android:layout_height="35dp"
+            android:background="@android:color/holo_orange_light"
+            app:layout_constraintStart_toEndOf="@+id/buttonnaranja"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonblanco"
+            android:layout_width="33dp"
+            android:layout_height="35dp"
+            android:background="@android:color/background_light"
+            app:layout_constraintStart_toEndOf="@+id/buttonamarillo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonverde"
+            android:layout_width="33dp"
+            android:layout_height="35dp"
+            android:background="@android:color/holo_green_dark"
+            app:layout_constraintStart_toEndOf="@+id/buttonblanco"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonazul"
+            android:layout_width="33dp"
+            android:layout_height="35dp"
+            android:background="@android:color/holo_blue_dark"
+            app:layout_constraintStart_toEndOf="@+id/buttonverde"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonmorado"
+            android:layout_width="33dp"
+            android:layout_height="35dp"
+            android:background="@android:color/holo_purple"
+            app:layout_constraintStart_toEndOf="@+id/buttonazul"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonmarron"
+            android:layout_width="33dp"
+            android:layout_height="35dp"
+            android:background="#460404"
+            app:layout_constraintStart_toEndOf="@+id/buttonmorado"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonverdeclaro"
+            android:layout_width="33dp"
+            android:layout_height="35dp"
+            android:background="@android:color/holo_green_light"
+            app:layout_constraintStart_toEndOf="@+id/buttonmarron"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonazulclaro"
+            android:layout_width="33dp"
+            android:layout_height="35dp"
+            android:background="@android:color/holo_blue_bright"
+            app:layout_constraintStart_toEndOf="@+id/buttonverdeclaro"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonnegro"
+            android:layout_width="33dp"
+            android:layout_height="35dp"
+            android:background="#000000"
+            app:layout_constraintStart_toEndOf="@+id/buttonazulclaro"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <view
+            android:id="@+id/board_view"
+            class="com.dibujar.paint.Board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonnaranja" />
+
+        <Button
+            android:id="@+id/buttonguardardibujo"
+            android:layout_width="95dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="#000000"
+            android:text="Guardar"
+            android:textColor="#FFE082"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonborrarpizarra"
+            android:layout_width="95dp"
+            android:layout_height="30dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="#000000"
+            android:text="Vaciar"
+            android:textColor="#FFE082"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonguardardibujo" />
+
+        <Button
+            android:id="@+id/buttondeshacer"
+            android:layout_width="95dp"
+            android:layout_height="30dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="#000000"
+            android:text="Borrar"
+            android:textColor="#FFE082"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonborrarpizarra" />
+
+        <Button
+            android:id="@+id/botonpicker"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/colores"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttondeshacer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

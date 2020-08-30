@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondocolor"
+    tools:context=".Cambiocolorpiezas">
+
+    <ImageButton
+        android:id="@+id/color1"
+        android:layout_width="96dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="95dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/op1" />
+
+    <ImageButton
+        android:id="@+id/color3"
+        android:layout_width="96dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color1"
+        app:srcCompat="@drawable/op3" />
+
+    <ImageButton
+        android:id="@+id/color5"
+        android:layout_width="96dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="47dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color3"
+        app:srcCompat="@drawable/op5" />
+
+    <ImageButton
+        android:id="@+id/color2"
+        android:layout_width="96dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="95dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/color1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/op2" />
+
+    <ImageButton
+        android:id="@+id/color4"
+        android:layout_width="96dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/color3"
+        app:layout_constraintTop_toBottomOf="@+id/color2"
+        app:srcCompat="@drawable/op4" />
+
+    <ImageButton
+        android:id="@+id/color6"
+        android:layout_width="96dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="47dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/color5"
+        app:layout_constraintTop_toBottomOf="@+id/color4"
+        app:srcCompat="@drawable/op6" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:onClick="volveratrascolorpiezas"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iratras" />
+</androidx.constraintlayout.widget.ConstraintLayout>
